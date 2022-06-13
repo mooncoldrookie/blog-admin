@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply mx-auto min-w-1024 max-w-1440;
+  }
+  .settings-item {
+    @apply mt-8 flex items-center gap-12;
+  }
+  .field {
+    @apply flex  items-center py-4;
+    h4 {
+      @apply w-28 text-base;
+    }
+    .field-input {
+      @apply h-9 w-full border border-gray-400 p-[2px] px-[2px]  outline-none focus:border focus:ring-0;
+    }
+  }
+  .field-content {
+    @apply w-[400px];
+  }
+  .error-message {
+    @apply invisible ml-4 h-9 leading-9 text-red-500 line-clamp-1;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+  }
+}
